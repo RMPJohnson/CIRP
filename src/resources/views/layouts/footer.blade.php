@@ -3,6 +3,6 @@
 
     </div>
     <div>
-        <strong>Copyright</strong> mwp.com.pk &copy; {{ date('Y') }}
+        <strong>Copyright</strong> Commercial Insurance Relationship &copy; {{ date('Y') }}
     </div>
 </div>

@@ -26,7 +26,7 @@
                 <a href="{{ route('dashboard') }}"><i class="fa fa-diamond"></i> <span class="nav-label">Dashboards</span></a>
             </li>
 
-                @role('Admin')
+                @role('Master')
                 <li {{ (request()->is('administrator/users*')) ? 'class=active' : '' }}>
                     <a href="#" aria-expanded="false"><i class="fa fa-users"></i> <span class="nav-label">Users Management</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse" aria-expanded="false">

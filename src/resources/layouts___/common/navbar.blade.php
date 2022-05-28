@@ -6,17 +6,6 @@
                 <span class="sr-only">Toggle navigation</span>
             </a>
         </li>
-        {{--<form action="#" method="get" class="form-inline mx-2">--}}
-            {{--<div class="input-group">--}}
-                {{--<input class="form-control form-control-navbar" type="search" name="q"--}}
-                       {{--placeholder="search" aria-label="search">--}}
-                {{--<div class="input-group-append">--}}
-                    {{--<button class="btn btn-navbar" type="submit">--}}
-                        {{--<i class="fas fa-search"></i>--}}
-                    {{--</button>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</form>--}}
     </ul>
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

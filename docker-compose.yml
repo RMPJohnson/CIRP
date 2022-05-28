@@ -17,7 +17,7 @@ services:
       - 8082:80
     # command: bash -c "/app/init/init.sh"
   database:
-    container_name: cirp-database
+    container_name: cirp_database
     image: mysql
     restart: always
     environment:
@@ -29,7 +29,7 @@ services:
     ports:
       - "9908:3306"
   phpmyadmin:
-    container_name: cirp-phpmyadmin
+    container_name: cirp_phpmyadmin
     image: phpmyadmin/phpmyadmin
     links:
       - database

@@ -29,10 +29,34 @@ class AdminUserSeeder extends Seeder
             'city' =>'Islamabad',
             'state'=>'Capital',
             'phone_no'=>'839-920-2902',
+            'user_type'=>'4',
+            'status'=>'0',
             'user_id'=>$user->id,
             'picture'=>'user.jpg',
         ]);
-        $role = Role::create(['name' => 'Admin']);
+        $role = Role::create(['name' => 'Master']);
+        $permissions = Permission::pluck('id','id')->all();
+        $role->syncPermissions($permissions);
+        $user->assignRole([$role->id]);
+
+        $user = User::create([
+            'name' => 'Broker',
+            'email' => 'broker@gmail.com',
+            'password' => 'broker123'
+        ]);
+        UserProfile::create([
+            'first_name'=>'Broker',
+            'last_name' =>'Jakeson',
+            'address' => 'St no 4 House no 32 F-10 Islamabad',
+            'city' =>'Islamabad',
+            'state'=>'Capital',
+            'phone_no'=>'839-920-2902',
+            'user_type'=>'4',
+            'status'=>'0',
+            'user_id'=>$user->id,
+            'picture'=>'user.jpg',
+        ]);
+        $role = Role::create(['name' => 'Broker']);
         $permissions = Permission::pluck('id','id')->all();
         $role->syncPermissions($permissions);
         $user->assignRole([$role->id]);
