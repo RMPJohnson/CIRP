@@ -22,9 +22,9 @@ class CreateUsersProfileTable extends Migration
             $table->string('state')->nullable();
             $table->string('phone_no')->nullable();
             $table->string('picture')->nullable();
-            $table->integer('user_type')->default('4')->comment('1: Admin, 2: Broker 3: Agent 4: Client');
-            $table->integer('status')->default('0')->comment('0: Block, 1: Active');
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('created_by_user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('updated_by_user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
             $table->softDeletes();
         });

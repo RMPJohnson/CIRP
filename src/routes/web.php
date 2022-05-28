@@ -37,6 +37,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
             Route::get('/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
             Route::patch('/{user}/update', [UserController::class, 'update'])->name('users.update');
             Route::delete('/{user}/delete', [UserController::class, 'destroy'])->name('users.destroy');
+            Route::get('/{user}/status', [UserController::class, 'status'])->name('users.status');
         });
 
         Route::resource('roles', RolesController::class);

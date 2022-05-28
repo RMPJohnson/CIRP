@@ -37,16 +37,26 @@
                 </li>
                 @endrole
 
-            <li {{ (request()->is('administrator/directory*')) ? 'class=active' : '' }}>
-                <a href="#" aria-expanded="false"><i class="fa fa-edit"></i> <span class="nav-label">Directory</span><span class="fa arrow"></span></a>
+            <li {{ (request()->is('administrator/brokers*')) ? 'class=active' : '' }}>
+                <a href="#" aria-expanded="false"><i class="fa fa-briefcase"></i> <span class="nav-label">Brokers</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse" aria-expanded="false">
-                    <li><a href="form_basic.html"><i class="fa fa-table"></i> Category</a></li>
-                    <li><a href="form_advanced.html"><i class="fa fa-user-secret"></i> Profiles</a></li>
+                    <li><a href="form_basic.html"><i class="fa fa-briefcase"></i> Brokers</a></li>
+                    <li><a href="form_advanced.html"><i class="fa fa-barcode"></i> Insurance Products</a></li>
+                    <li><a href="form_advanced.html"><i class="fa fa-question-circle"></i> Questionnaire</a></li>
+                    <li><a href="form_advanced.html"><i class="fa fa-tags"></i> Risk Tag </a></li>
                 </ul>
             </li>
+
+            <li>
+                <a href="{{ route('dashboard') }}"><i class="fa fa-angellist"></i> <span class="nav-label">Agents</span></a>
+            </li>
+            <li>
+                <a href="{{ route('dashboard') }}"><i class="fa fa-user-circle"></i> <span class="nav-label">Customers</span></a>
+            </li>
+            <li>
+                <a href="{{ route('dashboard') }}"><i class="fa fa-bar-chart"></i> <span class="nav-label">Reports</span></a>
+            </li>
         </ul>
-
-
     </div>
 </nav>
 @endauth

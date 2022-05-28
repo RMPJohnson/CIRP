@@ -11,4 +11,19 @@ class UserProfile extends Model
     protected $fillable = [
         'first_name', 'last_name','address','city','state','phone_no','user_id','picture'
     ];
+
+    public function user()
+    {
+        return $this->hasOne(User::class);
+    }
+
+    public function created_by()
+    {
+        return $this->hasOne(User::class,'id','created_by_user_id');
+    }
+
+    public function updated_by()
+    {
+        return $this->hasOne(User::class,'id','updated_by_user_id');
+    }
 }
