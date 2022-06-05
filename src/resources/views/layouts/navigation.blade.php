@@ -47,9 +47,11 @@
                 </ul>
             </li>
 
+            <!--
             <li>
                 <a href="{{ route('dashboard') }}"><i class="fa fa-angellist"></i> <span class="nav-label">Agents</span></a>
             </li>
+            -->
             <li>
                 <a href="{{ route('dashboard') }}"><i class="fa fa-user-circle"></i> <span class="nav-label">Customers</span></a>
             </li>
