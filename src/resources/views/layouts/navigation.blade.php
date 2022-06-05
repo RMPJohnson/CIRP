@@ -40,10 +40,10 @@
             <li {{ (request()->is('administrator/brokers*')) ? 'class=active' : '' }}>
                 <a href="#" aria-expanded="false"><i class="fa fa-briefcase"></i> <span class="nav-label">Brokers</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse" aria-expanded="false">
-                    <li><a href="form_basic.html"><i class="fa fa-briefcase"></i> Brokers</a></li>
+                    <li><a href="{{ route('broker.index') }}"><i class="fa fa-briefcase"></i> Brokers</a></li>
                     <li><a href="form_advanced.html"><i class="fa fa-barcode"></i> Insurance Products</a></li>
                     <li><a href="form_advanced.html"><i class="fa fa-question-circle"></i> Questionnaire</a></li>
-                    <li><a href="form_advanced.html"><i class="fa fa-tags"></i> Risk Tag </a></li>
+                    <li><a href="form_advanced.html"><i class="fa fa-tags"></i> Risk Tags </a></li>
                 </ul>
             </li>
 

@@ -2,6 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BrokerController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\QuestionaireController;
+use App\Http\Controllers\InsuranceController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RisktagsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +45,16 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
             Route::patch('/{user}/update', [UserController::class, 'update'])->name('users.update');
             Route::delete('/{user}/delete', [UserController::class, 'destroy'])->name('users.destroy');
             Route::get('/{user}/status', [UserController::class, 'status'])->name('users.status');
+        });
+        Route::group(['prefix' => 'brokers'], function() {
+            Route::resource('brokers', BrokerController::class);
+            Route::resource('category', CategoryController::class);
+            Route::resource('risktags', RisktagsController::class);
+            Route::resource('questionnaire', QuestionnaireController::class);
+            Route::resource('insurance', InsuranceController::class);
+        });
+        Route::group(['prefix' => 'clients'], function() {
+            Route::resource('clients', ClientController::class);
         });
 
         Route::resource('roles', RolesController::class);
