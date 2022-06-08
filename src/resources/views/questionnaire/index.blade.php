@@ -17,7 +17,7 @@
                     <thead>
                     <tr>
                         <th scope="col" width="1%">#</th>
-                        <th scope="col" width="15%">Category</th>
+                        <th scope="col">Category</th>
                         <th scope="col">Question</th>
                         <th scope="col">Risk Tags</th>
                         <th scope="col">Status</th>
@@ -29,8 +29,8 @@
                     <tbody>
                     <tr>
                         <th scope="row">11</th>
-                        <td>Nova Sipes</td>
-                        <td>nova-sipes</td>
+                        <td>Company</td>
+                        <td>Had any convictions for driving under the influence of alcohol or drugs? </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
                         <td>
                             <span class="text-danger"> <i class="fa fa-lock"></i> Block</span>
@@ -52,8 +52,8 @@
                     </tr>
                     <tr>
                         <th scope="row">20</th>
-                        <td>Cleta Ryan</td>
-                        <td>cleta-ryan</td>
+                        <td>Company</td>
+                        <td>Had a licence cancelled/suspended in the last 5 years?       </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -76,8 +76,8 @@
                     </tr>
                     <tr>
                         <th scope="row">19</th>
-                        <td>Glennie Swift</td>
-                        <td>glennie-swift</td>
+                        <td>Business</td>
+                        <td>Ever had a claim declined by an insurer?</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -100,8 +100,8 @@
                     </tr>
                     <tr>
                         <th scope="row">18</th>
-                        <td>Layla Rolfson</td>
-                        <td>layla-rolfson</td>
+                        <td>Business</td>
+                        <td>Ever been liable for any civil offence or pecuniary penalty? </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -124,8 +124,8 @@
                     </tr>
                     <tr>
                         <th scope="row">17</th>
-                        <td>Dejuan Wisoky</td>
-                        <td>dejuan-wisoky</td>
+                        <td>Business</td>
+                        <td>Ever been charged or convicted of a criminal offence?  </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -149,8 +149,8 @@
                     </tr>
                     <tr>
                         <th scope="row">16</th>
-                        <td>Jessica Price</td>
-                        <td>jessica-price</td>
+                        <td>Business ISR</td>
+                        <td>Ever Been liable for any criminal offence           </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -173,8 +173,8 @@
                     </tr>
                     <tr>
                         <th scope="row">15</th>
-                        <td>Myrtle Kilback</td>
-                        <td>myrtle-kilback</td>
+                        <td>Business ISR</td>
+                        <td>Ever Been liable for any criminal offence           </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -197,8 +197,8 @@
                     </tr>
                     <tr>
                         <th scope="row">14</th>
-                        <td>Shawn Terry</td>
-                        <td>shawn-terry</td>
+                        <td>Business ISR</td>
+                        <td>Ever been placed into administration, receivership, liquidation or bankruptcy?  </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -221,8 +221,8 @@
                     </tr>
                     <tr>
                         <th scope="row">13</th>
-                        <td>Antonette Quigley MD</td>
-                        <td>antonette-quigley-md</td>
+                        <td>Business ISR</td>
+                        <td>Ever had an insurance policy cancelled, declined or terms imposed? </td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -245,8 +245,8 @@
                     </tr>
                     <tr>
                         <th scope="row">12</th>
-                        <td>Serenity Auer</td>
-                        <td>serenity-auer</td>
+                        <td>Business ISR</td>
+                        <td>Made any insurance claims in the last 5 years (relevant to this application)?</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>

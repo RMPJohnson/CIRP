@@ -6,6 +6,7 @@
     <link href="{{ asset('font-awesome/css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
     <!-- Mainly scripts -->
     <script src="{!! asset('js/jquery-3.1.1.min.js') !!}" type="text/javascript"></script>
@@ -18,6 +19,7 @@
     <script src="{!! asset('js/inspinia.js') !!}" type="text/javascript"></script>
     <!-- jQuery UI -->
     <script src="{!! asset('plugins/jquery-ui/jquery-ui.min.js') !!}"></script>
+    <script src="{!! asset('plugins/iCheck/icheck.min.js') !!}"></script>
 
 
 </head>

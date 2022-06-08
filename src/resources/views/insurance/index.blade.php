@@ -5,7 +5,7 @@
         <div class="ibox">
             <div class="ibox-title">
                 Manage Insurance Products.
-                <a href="#/create" class="btn btn-primary btn-sm float-right">
+                <a href="{{ route('insurance.create') }}" class="btn btn-primary btn-sm float-right">
                     <i class="fa fa-plus"></i> Add insurance products
                 </a>
 

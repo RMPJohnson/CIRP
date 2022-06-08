@@ -19,10 +19,6 @@
                     <input placeholder="Slug" id="slug" class="form-control" name="slug" type="text">
                 </div>
                 <div class="mb-3">
-                    <label for="name" class="form-label">Tags *</label>
-                    <input placeholder="Tags1, Tags2, Tags3" id="slug" class="form-control" name="slug" type="text">
-                </div>
-                <div class="mb-3">
                     <label for="name" class="form-label">Status *</label> <br>
                     Active  <input name="status" type="radio" value="1">
                     Block   <input checked="checked" name="status" type="radio" value="0">
