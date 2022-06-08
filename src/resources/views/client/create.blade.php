@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'User | Create')
+@section('title', 'Customer | Create')
 @section('content')
 
     <div class="col-lg-12 col-md-12">
@@ -16,7 +16,7 @@
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                 <label for="name" class="form-label">First Name *</label>
-                                {!! Form::text('first_name', old('first_name'), array('placeholder' => 'First Name','class' => 'form-control')) !!}
+                                {!! Form::text('first_name', old('first_name'), array('placeholder' => '','class' => 'form-control')) !!}
                                 @if ($errors->has('first_name'))
                                     <span class="text-danger text-left">{{ $errors->first('first_name') }}</span>
                                 @endif
@@ -25,7 +25,7 @@
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Last Name *</label>
-                                    {!! Form::text('name', old('name'), array('placeholder' => 'User Name','class' => 'form-control')) !!}
+                                    {!! Form::text('name', old('name'), array('placeholder' => '','class' => 'form-control')) !!}
                                     @if ($errors->has('name'))
                                         <span class="text-danger text-left">{{ $errors->first('name') }}</span>
                                     @endif
@@ -36,7 +36,7 @@
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Father Name *</label>
-                                    {!! Form::text('first_name', old('first_name'), array('placeholder' => 'Father Name','class' => 'form-control')) !!}
+                                    {!! Form::text('first_name', old('first_name'), array('placeholder' => '','class' => 'form-control')) !!}
                                     @if ($errors->has('first_name'))
                                         <span class="text-danger text-left">{{ $errors->first('first_name') }}</span>
                                     @endif
@@ -45,7 +45,7 @@
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Mother Name *</label>
-                                    {!! Form::text('name', old('name'), array('placeholder' => 'Mother Name','class' => 'form-control')) !!}
+                                    {!! Form::text('name', old('name'), array('placeholder' => '','class' => 'form-control')) !!}
                                     @if ($errors->has('name'))
                                         <span class="text-danger text-left">{{ $errors->first('name') }}</span>
                                     @endif
@@ -81,58 +81,73 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">House Phone No *</label>
+                                    {!! Form::text('phone_no', old('phone_no'), array('placeholder' => '','class' => 'form-control')) !!}
+                                    @if ($errors->has('phone_no'))
+                                        <span class="text-danger text-left">{{ $errors->first('phone_no') }}</span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Mobile No *</label>
+                                    {!! Form::text('phone_no', old('phone_no'), array('placeholder' => '','class' => 'form-control')) !!}
+                                    @if ($errors->has('phone_no'))
+                                        <span class="text-danger text-left">{{ $errors->first('phone_no') }}</span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Office Phone No </label>
+                                    {!! Form::text('phone_no', old('phone_no'), array('placeholder' => '','class' => 'form-control')) !!}
+                                    @if ($errors->has('phone_no'))
+                                        <span class="text-danger text-left">{{ $errors->first('phone_no') }}</span>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
 
 
                     </div>
                     <div class="col-lg-6">
                         <div class="mb-3">
                             <label for="name" class="form-label">Address *</label>
-                            {!! Form::text('address', old('address'), array('placeholder' => 'Address','class' => 'form-control')) !!}
+                            {!! Form::text('address', old('address'), array('placeholder' => '','class' => 'form-control')) !!}
                             @if ($errors->has('address'))
                                 <span class="text-danger text-left">{{ $errors->first('address') }}</span>
                             @endif
                         </div>
                         <div class="row">
-                            <div class="col-lg-6"><div class="mb-3">
+                            <div class="col-lg-4"><div class="mb-3">
                                     <label for="name" class="form-label">City *</label>
-                                    {!! Form::text('city', old('city'), array('placeholder' => 'City','class' => 'form-control')) !!}
+                                    {!! Form::text('city', old('city'), array('placeholder' => '','class' => 'form-control')) !!}
                                     @if ($errors->has('city'))
                                         <span class="text-danger text-left">{{ $errors->first('city') }}</span>
                                     @endif
                                 </div></div>
-                            <div class="col-lg-6"><div class="mb-3">
+                            <div class="col-lg-4">
+                                <div class="mb-3">
                                     <label for="name" class="form-label">State *</label>
-                                    {!! Form::text('state', old('state'), array('placeholder' => 'State','class' => 'form-control')) !!}
+                                    {!! Form::text('state', old('state'), array('placeholder' => '','class' => 'form-control')) !!}
                                     @if ($errors->has('state'))
                                         <span class="text-danger text-left">{{ $errors->first('state') }}</span>
                                     @endif
                                 </div>
                             </div>
+                            <div class="col-lg-4"><div class="mb-3">
+                                    <label for="name" class="form-label">ZipCode *</label>
+                                    {!! Form::text('city', old('city'), array('placeholder' => '','class' => 'form-control')) !!}
+                                    @if ($errors->has('city'))
+                                        <span class="text-danger text-left">{{ $errors->first('city') }}</span>
+                                    @endif
+                                </div></div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">House Phone No *</label>
-                                    {!! Form::text('phone_no', old('phone_no'), array('placeholder' => 'House Phone No','class' => 'form-control')) !!}
-                                    @if ($errors->has('phone_no'))
-                                        <span class="text-danger text-left">{{ $errors->first('phone_no') }}</span>
-                                    @endif
-                                </div>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Mobile No *</label>
-                                    {!! Form::text('phone_no', old('phone_no'), array('placeholder' => 'Mobile No','class' => 'form-control')) !!}
-                                    @if ($errors->has('phone_no'))
-                                        <span class="text-danger text-left">{{ $errors->first('phone_no') }}</span>
-                                    @endif
-                                </div>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Office Phone No </label>
-                                    {!! Form::text('phone_no', old('phone_no'), array('placeholder' => 'Office Phone No','class' => 'form-control')) !!}
-                                    @if ($errors->has('phone_no'))
-                                        <span class="text-danger text-left">{{ $errors->first('phone_no') }}</span>
-                                    @endif
-                                </div>
-                            </div>
+
                             <div class="col-lg-6">
                                 <label for="name" class="form-label">Upload Picture *</label>
                                 {!! Form::file('picture' , array('placeholder' => 'Upload Picture','class' => 'form-control')) !!}
@@ -158,7 +173,7 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address *</label>
-                            {!! Form::text('email', old('email'), array('placeholder' => 'Email Address','class' => 'form-control')) !!}
+                            {!! Form::text('email', old('email'), array('placeholder' => '','class' => 'form-control')) !!}
                             @if ($errors->has('email'))
                                 <span class="text-danger text-left">{{ $errors->first('email') }}</span>
                             @endif
@@ -167,7 +182,7 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="name" class="form-label">User Name *</label>
-                            {!! Form::text('last_name', old('last_name'), array('placeholder' => 'Last Name','class' => 'form-control')) !!}
+                            {!! Form::text('last_name', old('last_name'), array('placeholder' => '','class' => 'form-control')) !!}
                             @if ($errors->has('last_name'))
                                 <span class="text-danger text-left">{{ $errors->first('last_name') }}</span>
                             @endif
@@ -176,7 +191,7 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="name" class="form-label">Password *</label>
-                            {!! Form::password('password', array('placeholder' => 'Password','class' => 'form-control')) !!}
+                            {!! Form::password('password', array('placeholder' => '','class' => 'form-control')) !!}
                             @if ($errors->has('city'))
                                 <span class="text-danger text-left">{{ $errors->first('password') }}</span>
                             @endif
@@ -184,7 +199,7 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="name" class="form-label">Confirm Password *</label>
-                            {!! Form::password('confirm-password', array('placeholder' => 'Confirm Password','class' => 'form-control')) !!}
+                            {!! Form::password('confirm-password', array('placeholder' => '','class' => 'form-control')) !!}
                             @if ($errors->has('state'))
                                 <span class="text-danger text-left">{{ $errors->first('state') }}</span>
                             @endif
@@ -233,8 +248,8 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <fieldset class="company" >
-                            <legend>Company Details</legend>
+                        <div class="company" >
+                            <h3>Company Details</h3>
                             <div class="row">
                                 <div class="col-4">
                                     <div class="mb-3">
@@ -355,9 +370,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </fieldset>
-                        <fieldset class="business">
-                            <legend>Address Business</legend>
+                        </div>
+                        <div class="business">
+                            <h3>Address Business</h3>
                             <div class="row">
                                 <div class="col-4">
                                     <div class="mb-3">
@@ -520,9 +535,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </fieldset>
-                        <fieldset class="businessisr">
-                            <legend>Address Business ISR</legend>
+                        </div>
+                        <div class="businessisr">
+                            <h3>Address Business ISR</h3>
                             <div class="row">
                                 <div class="col-4">
                                     <div class="mb-3">
@@ -685,91 +700,108 @@
                                     </div>
                                 </div>
                             </div>
-                        </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="ibox-content">
-                            <h2>Questions</h2>
-                            <small>These are the questions for each specific categories.</small>
-                            <ul class="todo-list m-t company">
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">HAS ANY PERSON WHO WILL WHO WILL DRIVE YOUR VEHICLE(S)</span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Had any convictions for driving under the influence of alcohol or drugs? </span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Had a licence cancelled/suspended in the last 5 years?</span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Ever had a claim declined by an insurer?</span>
-
-                                </li>
-                            </ul>
-                            <ul class="todo-list m-t business">
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">HAS ANY PERSON OR ENTITY, WHO WILL BE COVERED BY THIS POLICY:</span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Ever been liable for any civil offence or pecuniary penalty?   </span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Ever been charged or convicted of a criminal offence?       </span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Ever Been liable for any criminal offence    </span>
-
-                                </li>
-                            </ul>
-                            <ul class="todo-list m-t businessisr">
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Made any insurance claims in the last 5 years (relevant to this application)?</span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Had any convictions for driving under the influence of alcohol or drugs? </span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Ever had an insurance policy cancelled, declined or terms imposed?</span>
-
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="" name="" class="i-checks" >
-                                    <span class="m-l-xs">Have anything else to declare under your duty of disclosure?</span>
-
-                                </li>
-                            </ul>
                         </div>
                     </div>
 
+
                 </div>
             </div>
+        </div>
+        <div class="ibox">
+            <div class="ibox-title">
+                Questions
+            </div>
+            <div class="ibox-content">
+                <small>These are the questions for each specific categories.</small>
+                <ul class="todo-list m-t company">
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">HAS ANY PERSON WHO WILL WHO WILL DRIVE YOUR VEHICLE(S)</span>
+
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Had any convictions for driving under the influence of alcohol or drugs? </span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Had a licence cancelled/suspended in the last 5 years?</span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Ever had a claim declined by an insurer?</span>
+
+                    </li>
+                    <li>
+
+                        <span class="m-l-xs">No of year that you want this policy?</span>
+                        <input type="text" class="form-control" value="5">
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Do you have any health issue? if Yes please describe.</span>
+                        <textarea class="form-control"></textarea>
+                    </li>
+                </ul>
+                <ul class="todo-list m-t business">
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">HAS ANY PERSON OR ENTITY, WHO WILL BE COVERED BY THIS POLICY:</span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Ever been liable for any civil offence or pecuniary penalty?   </span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Ever been charged or convicted of a criminal offence?       </span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Ever Been liable for any criminal offence    </span>
+
+                    </li>
+                </ul>
+                <ul class="todo-list m-t businessisr">
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Made any insurance claims in the last 5 years (relevant to this application)?</span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Had any convictions for driving under the influence of alcohol or drugs? </span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Ever had an insurance policy cancelled, declined or terms imposed?</span>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" value="" name="" class="i-checks" >
+                        <span class="m-l-xs">Have anything else to declare under your duty of disclosure?</span>
+
+                    </li>
+                </ul>
+            </div>
+
             <div class="ibox-footer">
-                <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> Save User</button>
-                <a href="{{ route('users.index') }}" class="btn btn-default"> <i class="fa fa-arrow-left"></i> Back</a>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> Save Customer</button>
+                <a href="{{ route('clients.index') }}" class="btn btn-default"> <i class="fa fa-arrow-left"></i> Back</a>
             </div>
         </div>
 
 
     </form>
+        <div class="mt-4">&nbsp;</div>
     </div>
 
 @endsection
