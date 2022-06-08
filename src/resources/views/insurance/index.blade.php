@@ -31,8 +31,8 @@
                     <tbody>
                     <tr>
                         <th scope="row">11</th>
-                        <td>Nova Sipes</td>
-                        <td>nova-sipes</td>
+                        <td>Company Insurance Policy for 5 Year</td>
+                        <td>Company</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
                         <td>
                             <span class="text-danger"> <i class="fa fa-lock"></i> Block</span>
@@ -56,8 +56,8 @@
                     </tr>
                     <tr>
                         <th scope="row">20</th>
-                        <td>Cleta Ryan</td>
-                        <td>cleta-ryan</td>
+                        <td>Company Insurance Policy for 10 Year</td>
+                        <td>Company</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -82,8 +82,8 @@
                     </tr>
                     <tr>
                         <th scope="row">19</th>
-                        <td>Glennie Swift</td>
-                        <td>glennie-swift</td>
+                        <td>Company Insurance Policy for 15 Year</td>
+                        <td>Company</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -108,8 +108,8 @@
                     </tr>
                     <tr>
                         <th scope="row">18</th>
-                        <td>Layla Rolfson</td>
-                        <td>layla-rolfson</td>
+                        <td>Business Insurance Structure Policy for 5 Year</td>
+                        <td>Business</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -134,8 +134,8 @@
                     </tr>
                     <tr>
                         <th scope="row">17</th>
-                        <td>Dejuan Wisoky</td>
-                        <td>dejuan-wisoky</td>
+                        <td>Business Insurance Interior Policy for 5 Year</td>
+                        <td>Business</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -161,8 +161,8 @@
                     </tr>
                     <tr>
                         <th scope="row">16</th>
-                        <td>Jessica Price</td>
-                        <td>jessica-price</td>
+                        <td>Aircraft Travel Insurance</td>
+                        <td>Aircraft</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -187,8 +187,8 @@
                     </tr>
                     <tr>
                         <th scope="row">15</th>
-                        <td>Myrtle Kilback</td>
-                        <td>myrtle-kilback</td>
+                        <td>Aircraft Full insurance 3 Year</td>
+                        <td>Aircraft</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -213,8 +213,8 @@
                     </tr>
                     <tr>
                         <th scope="row">14</th>
-                        <td>Shawn Terry</td>
-                        <td>shawn-terry</td>
+                        <td>Motorcar Full Insurance for 10 Year</td>
+                        <td>Motorcar/Private</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -239,8 +239,8 @@
                     </tr>
                     <tr>
                         <th scope="row">13</th>
-                        <td>Antonette Quigley MD</td>
-                        <td>antonette-quigley-md</td>
+                        <td>Motorcar Full Insurance for 3 Year</td>
+                        <td>Motorcar/Private</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
@@ -265,8 +265,8 @@
                     </tr>
                     <tr>
                         <th scope="row">12</th>
-                        <td>Serenity Auer</td>
-                        <td>serenity-auer</td>
+                        <td>Motorcar Full Insurance for 5 Year</td>
+                        <td>Motorcar/Private</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 
                         <td>
