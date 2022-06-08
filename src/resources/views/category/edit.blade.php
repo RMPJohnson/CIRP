@@ -2,7 +2,7 @@
 @section('title', 'User | Create')
 @section('content')
 
-    <div class="col-lg-6 col-md-6">
+    <div class="col-lg-12 col-md-12">
     <form method="post" action="{{ route('category.store') }}">
         @csrf
         <div class="ibox">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="name" class="form-label">Tags *</label>
-                    <input placeholder="Tags1, Tags2, Tags3" id="slug" class="form-control" name="slug" type="text">
+                    <input placeholder="Slug" id="slug" class="form-control" name="slug" type="text">
                 </div>
                 <div class="mb-3">
                     <label for="name" class="form-label">Status *</label> <br>
@@ -30,7 +30,7 @@
             </div>
             <div class="ibox-footer">
                 <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> Save changes</button>
-                <a href="{{ route('category.index') }}" class="btn btn-default"> <i class="fa fa-arrow-left"></i> Back</a>
+                <a href="http://devdirectory.com/administrator/category" class="btn btn-default"> <i class="fa fa-arrow-left"></i> Back</a>
             </div>
         </div>
     </form>

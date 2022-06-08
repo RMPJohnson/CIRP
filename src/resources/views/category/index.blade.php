@@ -5,7 +5,7 @@
         <div class="ibox">
             <div class="ibox-title">
                 Manage Categories.
-                <a href="#/create" class="btn btn-primary btn-sm float-right">
+                <a href="{{ route('category.create') }}" class="btn btn-primary btn-sm float-right">
                     <i class="fa fa-plus"></i> Add a category
                 </a>
 

@@ -44,15 +44,15 @@
                     <li><a href="{{ route('broker.index') }}"><i class="fa fa-briefcase"></i> Brokers</a></li>
                     <li><a href="{{ route('category.index') }}"><i class="fa fa-barcode"></i> Category</a></li>
                     <li><a href="{{ route('risktags.index') }}"><i class="fa fa-tags"></i> Risk Tags </a></li>
-                    <li><a href="{{ route('insurance.index') }}"><i class="fa fa-barcode"></i> Insurance Products</a></li>
                     <li><a href="{{ route('questionnaire.index') }}"><i class="fa fa-question-circle"></i> Questionnaire</a></li>
+                    <li><a href="{{ route('insurance.index') }}"><i class="fa fa-barcode"></i> Insurance Products</a></li>
                     @endrole
 
                     @role('Broker')
                     <li><a href="{{ route('category.index') }}"><i class="fa fa-barcode"></i> Category</a></li>
                     <li><a href="{{ route('risktags.index') }}"><i class="fa fa-tags"></i> Risk Tags </a></li>
-                    <li><a href="{{ route('insurance.index') }}"><i class="fa fa-barcode"></i> Insurance Products</a></li>
                     <li><a href="{{ route('questionnaire.index') }}"><i class="fa fa-question-circle"></i> Questionnaire</a></li>
+                    <li><a href="{{ route('insurance.index') }}"><i class="fa fa-barcode"></i> Insurance Products</a></li>
                     @endrole
 
                 </ul>

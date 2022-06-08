@@ -32,7 +32,7 @@ class RisktagsController extends Controller
      */
     public function create()
     {
-        //
+        return view('risktag.create');
     }
 
     /**

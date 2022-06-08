@@ -32,7 +32,7 @@ class QuestionnaireController extends Controller
      */
     public function create()
     {
-        //
+        return view('questionnaire.create');
     }
 
     /**

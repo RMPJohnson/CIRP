@@ -1,12 +1,12 @@
 @extends('layouts.app')
-@section('title', 'Broker Insurance Products')
+@section('title', 'Insurance Products')
 @section('content')
     <div class="col-lg-12">
         <div class="ibox">
             <div class="ibox-title">
                 Manage Insurance Products.
                 <a href="#/create" class="btn btn-primary btn-sm float-right">
-                    <i class="fa fa-plus"></i> Add a insurance products
+                    <i class="fa fa-plus"></i> Add insurance products
                 </a>
 
             </div>

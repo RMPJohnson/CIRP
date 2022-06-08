@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('title', 'Broker Management')
+@section('title', 'Risk Tags Management')
 @section('content')
     <div class="col-lg-12">
         <div class="ibox">
             <div class="ibox-title">
                 Manage Risk Tags
-                <a href="#/create" class="btn btn-primary btn-sm float-right">
+                <a href="{{ route('risktags.create') }}" class="btn btn-primary btn-sm float-right">
                     <i class="fa fa-plus"></i> Add a Risk Tags
                 </a>
 

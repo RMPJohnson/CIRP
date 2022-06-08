@@ -50,7 +50,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="">1</a></th>
+                        <th scope="row"><a href="">2</a></th>
                         <td>client@gmail.com</td>
                         <td>cleint 1</td>
                         <td>839-920-2902</td>
@@ -71,7 +71,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="">2</a></th>
+                        <th scope="row"><a href="">3</a></th>
                         <td>client2@gmail.com</td>
                         <td>client Jakeson</td>
                         <td>839-920-2902</td>
@@ -94,7 +94,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#">3</a></th>
+                        <th scope="row"><a href="#">4</a></th>
                         <td>client2@gmail.com</td>
                         <td>client Jeo</td>
                         <td>839-920-2902</td>
@@ -117,7 +117,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#">3</a></th>
+                        <th scope="row"><a href="#">6</a></th>
                         <td>client2@gmail.com</td>
                         <td>client Jeo</td>
                         <td>839-920-2902</td>
@@ -140,7 +140,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#">3</a></th>
+                        <th scope="row"><a href="#">7</a></th>
                         <td>client2@gmail.com</td>
                         <td>client Jeo</td>
                         <td>839-920-2902</td>
