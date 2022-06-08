@@ -41,13 +41,7 @@
                                 <span class="text-danger text-left">{{ $errors->first('email') }}</span>
                             @endif
                         </div>
-                        <div class="mb-3">
-                            <label for="role" class="form-label">Role *</label>
-                            {!! Form::select('role', $roles, old('role'),array('empty' => 'Select Role','class' => 'form-control')) !!}
-                            @if ($errors->has('role'))
-                                <span class="text-danger text-left">{{ $errors->first('role') }}</span>
-                            @endif
-                        </div>
+
                     </div>
                     <div class="col-lg-6">
                         <div class="mb-3">

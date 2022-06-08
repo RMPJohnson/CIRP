@@ -40,10 +40,21 @@
             <li {{ (request()->is('administrator/brokers*')) ? 'class=active' : '' }}>
                 <a href="#" aria-expanded="false"><i class="fa fa-briefcase"></i> <span class="nav-label">Brokers</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse" aria-expanded="false">
+                    @role('Master')
                     <li><a href="{{ route('broker.index') }}"><i class="fa fa-briefcase"></i> Brokers</a></li>
-                    <li><a href="form_advanced.html"><i class="fa fa-barcode"></i> Insurance Products</a></li>
-                    <li><a href="form_advanced.html"><i class="fa fa-question-circle"></i> Questionnaire</a></li>
-                    <li><a href="form_advanced.html"><i class="fa fa-tags"></i> Risk Tags </a></li>
+                    <li><a href="{{ route('category.index') }}"><i class="fa fa-barcode"></i> Category</a></li>
+                    <li><a href="{{ route('risktags.index') }}"><i class="fa fa-tags"></i> Risk Tags </a></li>
+                    <li><a href="{{ route('insurance.index') }}"><i class="fa fa-barcode"></i> Insurance Products</a></li>
+                    <li><a href="{{ route('questionnaire.index') }}"><i class="fa fa-question-circle"></i> Questionnaire</a></li>
+                    @endrole
+
+                    @role('Broker')
+                    <li><a href="{{ route('category.index') }}"><i class="fa fa-barcode"></i> Category</a></li>
+                    <li><a href="{{ route('risktags.index') }}"><i class="fa fa-tags"></i> Risk Tags </a></li>
+                    <li><a href="{{ route('insurance.index') }}"><i class="fa fa-barcode"></i> Insurance Products</a></li>
+                    <li><a href="{{ route('questionnaire.index') }}"><i class="fa fa-question-circle"></i> Questionnaire</a></li>
+                    @endrole
+
                 </ul>
             </li>
 
@@ -53,7 +64,7 @@
             </li>
             -->
             <li>
-                <a href="{{ route('dashboard') }}"><i class="fa fa-user-circle"></i> <span class="nav-label">Customers</span></a>
+                <a href="{{ route('clients.index') }}"><i class="fa fa-user-circle"></i> <span class="nav-label">Customers</span></a>
             </li>
             <li>
                 <a href="{{ route('dashboard') }}"><i class="fa fa-bar-chart"></i> <span class="nav-label">Reports</span></a>

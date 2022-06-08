@@ -1,13 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\BrokerController;
+/*use App\Http\Controllers\BrokerController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\QuestionaireController;
 use App\Http\Controllers\InsuranceController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\RisktagsController;
+use App\Http\Controllers\RisktagsController;*/
 
 /*
 |--------------------------------------------------------------------------
@@ -47,7 +48,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
             Route::get('/{user}/status', [UserController::class, 'status'])->name('users.status');
         });
         Route::group(['prefix' => 'brokers'], function() {
-            Route::resource('brokers', BrokerController::class);
+            Route::resource('broker', BrokerController::class);
             Route::resource('category', CategoryController::class);
             Route::resource('risktags', RisktagsController::class);
             Route::resource('questionnaire', QuestionnaireController::class);
