@@ -164,7 +164,7 @@
                         <td>Aircraft Travel Insurance</td>
                         <td>Aircraft</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
-
+                        Aircraft Full insurance 3 Year
                         <td>
                             <span class="text-danger"> <i class="fa fa-lock"></i> Block</span>
                         </td>
@@ -187,7 +187,7 @@
                     </tr>
                     <tr>
                         <th scope="row">15</th>
-                        <td>Aircraft Full insurance 3 Year</td>
+                        <td></td>
                         <td>Aircraft</td>
                         <td><span class="badge">Tag1</span> <span class="badge">Tag2</span> <span class="badge">Tag3</span> </td>
 

@@ -14,7 +14,7 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        $roles = [
+        /*$roles = [
             'Client'
         ];
 
@@ -22,6 +22,6 @@ class RoleSeeder extends Seeder
             $role = Role::create(['name' => $role]);
             $permissions = Permission::pluck('id','id')->all();
             $role->syncPermissions($permissions);
-        }
+        }*/
     }
 }

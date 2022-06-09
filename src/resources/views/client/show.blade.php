@@ -306,8 +306,7 @@
                 </ul>
             </div>
             <div class="ibox-footer">
-                <a href="http://devcirp.com/administrator/users/1/edit" class="btn btn-info"><i class="fa fa-pencil-square"></i> Edit User</a>
-                <a href="http://devcirp.com/administrator/users" class="btn btn-default"> <i class="fa fa-arrow-left"></i> Back</a>
+                <a href="{{ route('clients.products') }}" class="btn btn-default"> <i class="fa fa-arrow-left"></i> Back</a>
             </div>
         </div>
     </div>

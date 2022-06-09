@@ -19,7 +19,6 @@ class PermissionSeeder extends Seeder
             'product-edit',
             'product-delete',
             'product-approved',
-
             'client-list',
             'client-create',
             'client-edit',

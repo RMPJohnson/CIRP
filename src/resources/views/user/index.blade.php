@@ -50,7 +50,7 @@
                                 <div class="btn-group">
 
                                     <a href="{{ route('users.edit', $user->id) }}" class="btn btn-white btn-xs"> <i class="fa fa-edit"></i> Edit</a>
-                                    @if($user->id != auth()->user()->id && $user->roles->pluck('name')[0]!='Admin' )
+                                    @if($user->id != auth()->user()->id && $user->roles->pluck('name')[0]!='Master' )
                                         @if($user->status==1)
                                             <a href="{{ route('users.status', $user->id) }}" class="btn btn-white text-success btn-xs" title="Block this category"> <i class="fa fa-unlock"></i> Status</a>
                                         @else

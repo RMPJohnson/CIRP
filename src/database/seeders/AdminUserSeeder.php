@@ -66,14 +66,14 @@ class AdminUserSeeder extends Seeder
         $user->assignRole([$role->id]);
 
         $user = User::create([
-            'name' => 'Agent',
-            'email' => 'agent@gmail.com',
-            'password' => 'agent123',
+            'name' => 'client',
+            'email' => 'client@gmail.com',
+            'password' => 'client123',
             'status'=>'1',
             'user_type'=>'3',
         ]);
         UserProfile::create([
-            'first_name'=>'Agent',
+            'first_name'=>'Client',
             'last_name' =>'Jeo',
             'address' => 'St no 4 House no 32 F-10 Islamabad',
             'city' =>'Islamabad',
@@ -84,7 +84,7 @@ class AdminUserSeeder extends Seeder
             'user_id'=>$user->id,
             'picture'=>'user.jpg',
         ]);
-        $role = Role::create(['name' => 'Agent']);
+        $role = Role::create(['name' => 'Client']);
         $permissions = Permission::pluck('id','id')->all();
         $role->syncPermissions($permissions);
         $user->assignRole([$role->id]);

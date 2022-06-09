@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserController;
-/*use App\Http\Controllers\BrokerController;
 use App\Http\Controllers\ClientController;
+/*use App\Http\Controllers\BrokerController;
+
 use App\Http\Controllers\QuestionaireController;
 use App\Http\Controllers\InsuranceController;
 use App\Http\Controllers\CategoryController;
@@ -46,20 +47,32 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
             Route::patch('/{user}/update', [UserController::class, 'update'])->name('users.update');
             Route::delete('/{user}/delete', [UserController::class, 'destroy'])->name('users.destroy');
             Route::get('/{user}/status', [UserController::class, 'status'])->name('users.status');
+
+            Route::resource('roles', RolesController::class);
+            Route::resource('permissions', PermissionsController::class);
         });
-        Route::group(['prefix' => 'brokers'], function() {
-            Route::resource('broker', BrokerController::class);
-            Route::resource('category', CategoryController::class);
-            Route::resource('risktags', RisktagsController::class);
-            Route::resource('questionnaire', QuestionnaireController::class);
-            Route::resource('insurance', InsuranceController::class);
-        });
+        Route::resource('broker', BrokerController::class);
+        Route::resource('category', CategoryController::class);
+        Route::resource('risktags', RisktagsController::class);
+        Route::resource('questionnaire', QuestionnaireController::class);
+        Route::resource('insurance', InsuranceController::class);
+
         Route::group(['prefix' => 'clients'], function() {
-            Route::resource('clients', ClientController::class);
+            Route::get('/', [ClientController::class, 'index'])->name('clients.index');
+            Route::get('/create', [ClientController::class, 'create'])->name('clients.create');
+            Route::post('/create', [ClientController::class, 'store'])->name('clients.store');
+            Route::get('/{user}/show', [ClientController::class, 'show'])->name('clients.show');
+            Route::get('/{user}/edit', [ClientController::class, 'edit'])->name('clients.edit');
+            Route::patch('/{user}/update', [ClientController::class, 'update'])->name('clients.update');
+            Route::delete('/{user}/delete', [ClientController::class, 'destroy'])->name('clients.destroy');
+            Route::get('/{user}/status', [ClientController::class, 'status'])->name('clients.status');
+            Route::get('/products', [ClientController::class, 'products'])->name('clients.products');
         });
 
-        Route::resource('roles', RolesController::class);
-        Route::resource('permissions', PermissionsController::class);
+
+
+
+
     });
 
 });

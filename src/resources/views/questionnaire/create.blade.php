@@ -2,7 +2,7 @@
 @section('title', 'Questionnaire | Create')
 @section('content')
 
-    <div class="col-lg-6 col-md-6">
+    <div class="col-lg-12 col-md-12">
     <form method="post" action="{{ route('questionnaire.store') }}">
         @csrf
         <div class="ibox">
